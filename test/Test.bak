@@ -1,0 +1,7 @@
+task main()
+{
+OnRev(OUT_A, 50);
+OnRev(OUT_B, 50);
+Wait(2000);
+Off(OUT_AB);
+}

@@ -1,0 +1,109 @@
+#define Leistung 70
+#define Winkel 180
+#define Offset -7
+
+sub turnleft()
+{
+ OnRevSync(OUT_BC, Leistung, -40);
+}
+
+sub hardleft()
+{
+ //OnFwdSync(OUT_BC, 25, 0);
+ //Wait(10);
+ OnRevSync(OUT_BC, Leistung, -127);
+ //Wait(150);
+ //OnFwdSync(OUT_BC, Leistung, 0);
+ //Wait(40);
+}
+
+sub turnright()
+{
+ OnRevSync(OUT_BC, Leistung, 40);
+}
+
+sub hardright()
+{
+ //OnFwdSync(OUT_BC, 25, 0);
+ //Wait(10);
+ OnRevSync(OUT_BC, Leistung, 127);
+ //Wait(100);
+
+ //Wait(60);
+}
+
+sub forward()
+{
+ OnRevSync(OUT_BC, Leistung, 0);
+}
+
+sub reverse()
+{
+ OnFwdSync(OUT_BC, Leistung, 0);
+}
+
+sub dump()
+{
+ RotateMotor(OUT_A, 75, 90);
+ RotateMotor(OUT_A, 50, -90);
+}
+
+sub followline()
+{
+ ClearScreen();
+ int left = Sensor(IN_1);
+ int middle = Sensor(IN_2);
+ int right = Sensor(IN_3);
+ NumOut(0, LCD_LINE1, left);
+ NumOut(0, LCD_LINE2, middle);
+ NumOut(0, LCD_LINE3, right);
+ if ((left+10<right)&&(middle+10<right))
+ {
+  hardleft();
+ }
+ if ((right+10<left)&&(middle+10<left))
+ {
+  hardright();
+ }
+ if((middle+10<left)&&(middle+10<right))
+ {
+  forward();
+ }
+ else
+ {
+  if(left+10<middle)
+ {
+  turnleft();
+ }
+ else
+ {
+  if(right+10<middle)
+ {
+  turnright();
+ }
+ }
+ }
+}
+
+sub readDistance()
+{
+ int distance = SensorUS(IN_4);
+ if(distance <= 20)
+ {
+  Stop(OUT_BC);
+ }
+}
+
+task main()
+{
+ //dump();
+ SetSensorLight(IN_1);
+ SetSensorLight(IN_2);
+ SetSensorLight(IN_3);
+ SetSensorLowspeed(IN_4);
+ while(1==1)
+ {
+  followline();
+  //readDistance();
+ }
+}

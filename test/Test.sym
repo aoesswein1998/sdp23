@@ -1,0 +1,606 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0turnright	6	1	0	4	2
+1	__D0turnleft	6	1	4	4	2
+2	__DU0SetSensorLight_inline_main	5	1	8	4	15
+3	__D0SetSensorLight_inline_main	6	1	12	4	6
+4	__D0hardleft	6	1	16	4	2
+5	__D0forward	6	1	20	4	2
+6	__D0main	6	1	24	4	4
+7	__D0hardright	6	1	28	4	2
+8	__D0SetSensorLowspeed_inline_main	6	1	32	4	2
+9	__signed_stack_001hardright	6	1	36	4	2
+10	__signed_stack_001hardleft	6	1	40	4	2
+11	__signed_stack_001turnright	6	1	44	4	2
+12	__signed_stack_001turnleft	6	1	48	4	2
+13	__signed_stack_001followline	6	1	52	4	38
+14	__DU0SetSensorLowspeed_inline_main	5	1	56	4	5
+15	__signed_stack_001forward	6	1	60	4	2
+16	__signed_stack_002followline	6	1	64	4	6
+17	__OnRevMutex	9	0	68	4	10
+18	__D0followline	6	1	72	4	57
+19	__followline_7qG2_left_7qG2_000	4	1	76	2	7
+20	__followline_7qG2_middle_7qG2_000	4	1	78	2	8
+21	__followline_7qG2_right_7qG2_000	4	1	80	2	7
+22	__constVal200	4	0	82	2	2
+23	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	84	1	15
+24	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	85	1	6
+25	____initialize_global_data_return	1	1	86	1	3
+26	__followline_return	1	1	87	1	3
+27	__forward_return	1	1	88	1	3
+28	__hardright_return	1	1	89	1	3
+29	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	90	1	6
+30	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	91	1	2
+31	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	92	1	2
+32	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	93	1	2
+33	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	94	1	2
+34	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	95	1	2
+35	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	96	1	6
+36	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	97	1	6
+37	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	98	1	6
+38	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	99	1	4
+39	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	100	1	3
+40	__turnright_return	1	1	101	1	3
+41	__ResetSensorPort	1	1	102	1	6
+42	__ResetSensorTmp	1	1	103	1	2
+43	__constVal1	2	0	104	1	7
+44	__constVal0	2	1	105	1	6
+45	____ResetSensorSubroutine_return	1	1	106	1	6
+46	__constVal15	2	0	107	1	1
+47	__constVal7	2	0	108	1	5
+48	__constVal2	2	0	109	1	6
+49	__PFTmp	1	1	110	1	1
+50	__hardleft_return	1	1	111	1	3
+51	__constValNeg40	2	0	112	1	1
+52	__constVal96	2	0	113	1	5
+53	__constVal63	2	0	114	1	5
+54	__OnRev_Tmp	2	1	115	1	10
+55	__constVal32	2	0	116	1	15
+56	__turnleft_return	1	1	117	1	3
+57	__constValNeg127	2	0	118	1	1
+58	__TextOutArgs	8	0	4	16	18
+59	__TextOutArgs.Result	2	1	120	1	18
+60	__TextOutArgs.Location	8	0	2	4	18
+61	__TextOutArgs.Location.X	4	1	124	2	18
+62	__TextOutArgs.Location.Y	4	1	126	2	18
+63	__TextOutArgs.Text	7	0	128	4	18
+64	__TextOutArgs.Text.Text_type	1	0	0	1	0
+65	__TextOutArgs.Options	5	1	132	4	18
+66	__PointOutArgs	8	0	3	12	4
+67	__PointOutArgs.Result	2	1	136	1	4
+68	__PointOutArgs.Location	8	0	2	4	4
+69	__PointOutArgs.Location.X	4	1	140	2	4
+70	__PointOutArgs.Location.Y	4	1	142	2	4
+71	__PointOutArgs.Options	5	1	144	4	4
+72	__OUT_BC	7	0	148	4	5
+73	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	99	0	#line 99 "C:\Users\Adrian\Documents\Test.nxc"
+0	100	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	99	2	#line 99 "C:\Users\Adrian\Documents\Test.nxc"
+0	99	2	#line 99 "C:\Users\Adrian\Documents\Test.nxc"
+0	100	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	99	5	#line 99 "C:\Users\Adrian\Documents\Test.nxc"
+0	100	5	#line 100 "C:\Users\Adrian\Documents\Test.nxc"
+0	101	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	7	#line 4313 "NXCDefs.h"
+0	4314	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4314	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	11	#line 4313 "NXCDefs.h"
+0	4314	11		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	14	#line 4313 "NXCDefs.h"
+0	4314	14		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	17	#line 4313 "NXCDefs.h"
+0	4314	17		set __DU0SetSensorLight_inline_main, 5
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4314	20		jmp __001__ASM_Label_5
+0	4313	22	#line 4313 "NXCDefs.h"
+0	4314	22		set __DU0SetSensorLight_inline_main, 6
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4314	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	27	#line 4247 "NXCDefs.h"
+0	4248	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	31	#line 4247 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4315	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4315	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	36	#line 4314 "NXCDefs.h"
+0	4260	36	#line 4260 "NXCDefs.h"
+0	4261	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	40	#line 4260 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4316	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	42	#line 4315 "NXCDefs.h"
+0	4278	42	#line 4278 "NXCDefs.h"
+0	4279	42	#pragma macro 4
+0	4279	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4586	46	#line 4586 "NXCDefs.h"
+0	4278	46	#line 4278 "NXCDefs.h"
+0	4316	46	#line 4316 "NXCDefs.h"
+0	100	46	#line 100 "C:\Users\Adrian\Documents\Test.nxc"
+0	100	46	#line 100 "C:\Users\Adrian\Documents\Test.nxc"
+0	101	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	100	49	#line 100 "C:\Users\Adrian\Documents\Test.nxc"
+0	101	49	#line 101 "C:\Users\Adrian\Documents\Test.nxc"
+0	102	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	51	#line 4313 "NXCDefs.h"
+0	4314	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	53	#line 4313 "NXCDefs.h"
+0	4313	53	#line 4313 "NXCDefs.h"
+0	4314	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	55	#line 4313 "NXCDefs.h"
+0	4314	55		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	58	#line 4313 "NXCDefs.h"
+0	4314	58		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	61	#line 4313 "NXCDefs.h"
+0	4314	61		set __DU0SetSensorLight_inline_main, 5
+0	4313	64	#line 4313 "NXCDefs.h"
+0	4313	64	#line 4313 "NXCDefs.h"
+0	4314	64		jmp __002__ASM_Label_5
+0	4313	66	#line 4313 "NXCDefs.h"
+0	4314	66		set __DU0SetSensorLight_inline_main, 6
+0	4313	69	#line 4313 "NXCDefs.h"
+0	4313	69	#line 4313 "NXCDefs.h"
+0	4314	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	71	#line 4247 "NXCDefs.h"
+0	4248	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	75	#line 4247 "NXCDefs.h"
+0	4314	75	#line 4314 "NXCDefs.h"
+0	4314	75	#line 4314 "NXCDefs.h"
+0	4315	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	77	#line 4314 "NXCDefs.h"
+0	4314	77	#line 4314 "NXCDefs.h"
+0	4315	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	80	#line 4314 "NXCDefs.h"
+0	4260	80	#line 4260 "NXCDefs.h"
+0	4261	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	84	#line 4260 "NXCDefs.h"
+0	4315	84	#line 4315 "NXCDefs.h"
+0	4315	84	#line 4315 "NXCDefs.h"
+0	4316	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	86	#line 4315 "NXCDefs.h"
+0	4278	86	#line 4278 "NXCDefs.h"
+0	4279	86	#pragma macro 4
+0	4279	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4649	90	#line 4649 "NXCDefs.h"
+0	4278	90	#line 4278 "NXCDefs.h"
+0	4316	90	#line 4316 "NXCDefs.h"
+0	101	90	#line 101 "C:\Users\Adrian\Documents\Test.nxc"
+0	101	90	#line 101 "C:\Users\Adrian\Documents\Test.nxc"
+0	102	90		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	101	93	#line 101 "C:\Users\Adrian\Documents\Test.nxc"
+0	102	93	#line 102 "C:\Users\Adrian\Documents\Test.nxc"
+0	103	93		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	95	#line 4313 "NXCDefs.h"
+0	4314	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	97	#line 4313 "NXCDefs.h"
+0	4313	97	#line 4313 "NXCDefs.h"
+0	4314	97		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	99	#line 4313 "NXCDefs.h"
+0	4314	99		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	102	#line 4313 "NXCDefs.h"
+0	4314	102		brtst 4, __003__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	105	#line 4313 "NXCDefs.h"
+0	4314	105		set __DU0SetSensorLight_inline_main, 5
+0	4313	108	#line 4313 "NXCDefs.h"
+0	4313	108	#line 4313 "NXCDefs.h"
+0	4314	108		jmp __003__ASM_Label_5
+0	4313	110	#line 4313 "NXCDefs.h"
+0	4314	110		set __DU0SetSensorLight_inline_main, 6
+0	4313	113	#line 4313 "NXCDefs.h"
+0	4313	113	#line 4313 "NXCDefs.h"
+0	4314	113		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	115	#line 4247 "NXCDefs.h"
+0	4248	115		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	119	#line 4247 "NXCDefs.h"
+0	4314	119	#line 4314 "NXCDefs.h"
+0	4314	119	#line 4314 "NXCDefs.h"
+0	4315	119		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	121	#line 4314 "NXCDefs.h"
+0	4314	121	#line 4314 "NXCDefs.h"
+0	4315	121		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	124	#line 4314 "NXCDefs.h"
+0	4260	124	#line 4260 "NXCDefs.h"
+0	4261	124		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	128	#line 4260 "NXCDefs.h"
+0	4315	128	#line 4315 "NXCDefs.h"
+0	4315	128	#line 4315 "NXCDefs.h"
+0	4316	128		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	130	#line 4315 "NXCDefs.h"
+0	4278	130	#line 4278 "NXCDefs.h"
+0	4279	130	#pragma macro 4
+0	4279	130		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4712	134	#line 4712 "NXCDefs.h"
+0	4278	134	#line 4278 "NXCDefs.h"
+0	4316	134	#line 4316 "NXCDefs.h"
+0	102	134	#line 102 "C:\Users\Adrian\Documents\Test.nxc"
+0	102	134	#line 102 "C:\Users\Adrian\Documents\Test.nxc"
+0	103	134		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	102	137	#line 102 "C:\Users\Adrian\Documents\Test.nxc"
+0	103	137	#line 103 "C:\Users\Adrian\Documents\Test.nxc"
+0	104	137		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	139	#line 4342 "NXCDefs.h"
+0	4343	139		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	141	#line 4342 "NXCDefs.h"
+0	4342	141	#line 4342 "NXCDefs.h"
+0	4343	141		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	143	#line 4342 "NXCDefs.h"
+0	4343	143		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	146	#line 4342 "NXCDefs.h"
+0	4343	146		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	149	#line 4342 "NXCDefs.h"
+0	4343	149		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	152	#line 4342 "NXCDefs.h"
+0	4342	152	#line 4342 "NXCDefs.h"
+0	4343	152		jmp __004__ASM_Label_37
+0	4342	154	#line 4342 "NXCDefs.h"
+0	4343	154		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	157	#line 4342 "NXCDefs.h"
+0	4342	157	#line 4342 "NXCDefs.h"
+0	4343	157		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	159	#line 4247 "NXCDefs.h"
+0	4248	159		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	163	#line 4247 "NXCDefs.h"
+0	4343	163	#line 4343 "NXCDefs.h"
+0	4343	163	#line 4343 "NXCDefs.h"
+0	4344	163		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	165	#line 4343 "NXCDefs.h"
+0	4343	165	#line 4343 "NXCDefs.h"
+0	4344	165		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	168	#line 4343 "NXCDefs.h"
+0	4260	168	#line 4260 "NXCDefs.h"
+0	4261	168		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	172	#line 4260 "NXCDefs.h"
+0	4344	172	#line 4344 "NXCDefs.h"
+0	4344	172	#line 4344 "NXCDefs.h"
+0	4344	172	#line 4344 "NXCDefs.h"
+0	4278	172	#line 4278 "NXCDefs.h"
+0	4279	172	#pragma macro 4
+0	4279	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4279	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4803	176	#line 4803 "NXCDefs.h"
+0	4278	176	#line 4278 "NXCDefs.h"
+0	4345	176	#line 4345 "NXCDefs.h"
+0	103	176	#line 103 "C:\Users\Adrian\Documents\Test.nxc"
+0	104	176	#line 104 "C:\Users\Adrian\Documents\Test.nxc"
+0	105	176		set __D0main, 1
+0	105	179	#line 105 "C:\Users\Adrian\Documents\Test.nxc"
+0	106	179		tst 5, __D0main, __D0main
+0	105	182	#line 105 "C:\Users\Adrian\Documents\Test.nxc"
+0	106	182		brtst 4, __ASM_Label_590, __D0main
+0	107	185	#line 107 "C:\Users\Adrian\Documents\Test.nxc"
+0	108	185		subcall followline, __followline_return
+0	107	187	#line 107 "C:\Users\Adrian\Documents\Test.nxc"
+0	110	187	#line 110 "C:\Users\Adrian\Documents\Test.nxc"
+0	111	187		jmp __ASM_Label_589
+0	110	189	#line 110 "C:\Users\Adrian\Documents\Test.nxc"
+0	111	189		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6	0	#line 6 "C:\Users\Adrian\Documents\Test.nxc"
+2	7	0		set __signed_stack_001turnleft, 70
+2	6	3	#line 6 "C:\Users\Adrian\Documents\Test.nxc"
+2	6	3	#line 6 "C:\Users\Adrian\Documents\Test.nxc"
+2	7	3		mov __D0turnleft, __constValNeg40
+2	7	5	#line 7 "C:\Users\Adrian\Documents\Test.nxc"
+2	8	5	#pragma macro 10
+2	8	5		acquire __OnRevMutex
+2	8	6		neg __OnRev_Tmp, __signed_stack_001turnleft
+2	8	9		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0turnleft, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	8	32		release __OnRevMutex
+2	3993	33	#line 3993 "C:\Users\Adrian\Documents\Test.nxc"
+2	7	33	#line 7 "C:\Users\Adrian\Documents\Test.nxc"
+2	9	33	#line 9 "C:\Users\Adrian\Documents\Test.nxc"
+2	10	33		subret __turnleft_return
+3	13	0	#line 13 "C:\Users\Adrian\Documents\Test.nxc"
+3	14	0		set __signed_stack_001hardleft, 70
+3	13	3	#line 13 "C:\Users\Adrian\Documents\Test.nxc"
+3	13	3	#line 13 "C:\Users\Adrian\Documents\Test.nxc"
+3	14	3		mov __D0hardleft, __constValNeg127
+3	17	5	#line 17 "C:\Users\Adrian\Documents\Test.nxc"
+3	18	5	#pragma macro 10
+3	18	5		acquire __OnRevMutex
+3	18	6		neg __OnRev_Tmp, __signed_stack_001hardleft
+3	18	9		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0hardleft, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	18	32		release __OnRevMutex
+3	4009	33	#line 4009 "C:\Users\Adrian\Documents\Test.nxc"
+3	17	33	#line 17 "C:\Users\Adrian\Documents\Test.nxc"
+3	19	33	#line 19 "C:\Users\Adrian\Documents\Test.nxc"
+3	20	33		subret __hardleft_return
+4	21	0	#line 21 "C:\Users\Adrian\Documents\Test.nxc"
+4	22	0		set __signed_stack_001turnright, 70
+4	21	3	#line 21 "C:\Users\Adrian\Documents\Test.nxc"
+4	21	3	#line 21 "C:\Users\Adrian\Documents\Test.nxc"
+4	22	3		set __D0turnright, 40
+4	22	6	#line 22 "C:\Users\Adrian\Documents\Test.nxc"
+4	23	6	#pragma macro 10
+4	23	6		acquire __OnRevMutex
+4	23	7		neg __OnRev_Tmp, __signed_stack_001turnright
+4	23	10		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0turnright, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	23	33		release __OnRevMutex
+4	4025	34	#line 4025 "C:\Users\Adrian\Documents\Test.nxc"
+4	22	34	#line 22 "C:\Users\Adrian\Documents\Test.nxc"
+4	24	34	#line 24 "C:\Users\Adrian\Documents\Test.nxc"
+4	25	34		subret __turnright_return
+5	28	0	#line 28 "C:\Users\Adrian\Documents\Test.nxc"
+5	29	0		set __signed_stack_001hardright, 70
+5	28	3	#line 28 "C:\Users\Adrian\Documents\Test.nxc"
+5	28	3	#line 28 "C:\Users\Adrian\Documents\Test.nxc"
+5	29	3		set __D0hardright, 127
+5	32	6	#line 32 "C:\Users\Adrian\Documents\Test.nxc"
+5	33	6	#pragma macro 10
+5	33	6		acquire __OnRevMutex
+5	33	7		neg __OnRev_Tmp, __signed_stack_001hardright
+5	33	10		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0hardright, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	33	33		release __OnRevMutex
+5	4041	34	#line 4041 "C:\Users\Adrian\Documents\Test.nxc"
+5	32	34	#line 32 "C:\Users\Adrian\Documents\Test.nxc"
+5	34	34	#line 34 "C:\Users\Adrian\Documents\Test.nxc"
+5	35	34		subret __hardright_return
+6	36	0	#line 36 "C:\Users\Adrian\Documents\Test.nxc"
+6	37	0		set __signed_stack_001forward, 70
+6	36	3	#line 36 "C:\Users\Adrian\Documents\Test.nxc"
+6	36	3	#line 36 "C:\Users\Adrian\Documents\Test.nxc"
+6	37	3		set __D0forward, 0
+6	37	6	#line 37 "C:\Users\Adrian\Documents\Test.nxc"
+6	38	6	#pragma macro 10
+6	38	6		acquire __OnRevMutex
+6	38	7		neg __OnRev_Tmp, __signed_stack_001forward
+6	38	10		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0forward, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	38	33		release __OnRevMutex
+6	4057	34	#line 4057 "C:\Users\Adrian\Documents\Test.nxc"
+6	37	34	#line 37 "C:\Users\Adrian\Documents\Test.nxc"
+6	39	34	#line 39 "C:\Users\Adrian\Documents\Test.nxc"
+6	40	34		subret __forward_return
+7	6678	0	#line 6678 "NXCDefs.h"
+7	6679	0	#pragma macro 6
+7	6679	0		mov __PointOutArgs.Location.X, __constVal200
+7	6679	2		mov __PointOutArgs.Location.Y, __constVal200
+7	6679	4		mov __PointOutArgs.Options, __constVal1
+7	6679	6		syscall 14, __PointOutArgs
+7	4109	9	#line 4109 "NXCDefs.h"
+7	6678	9	#line 6678 "NXCDefs.h"
+7	53	9	#line 53 "C:\Users\Adrian\Documents\Test.nxc"
+7	53	9	#line 53 "C:\Users\Adrian\Documents\Test.nxc"
+7	54	9		getin __followline_7qG2_left_7qG2_000, __constVal0, 4
+7	53	13	#line 53 "C:\Users\Adrian\Documents\Test.nxc"
+7	54	13	#line 54 "C:\Users\Adrian\Documents\Test.nxc"
+7	55	13		getin __followline_7qG2_middle_7qG2_000, __constVal1, 4
+7	54	17	#line 54 "C:\Users\Adrian\Documents\Test.nxc"
+7	55	17	#line 55 "C:\Users\Adrian\Documents\Test.nxc"
+7	56	17		getin __followline_7qG2_right_7qG2_000, __constVal2, 4
+7	55	21	#line 55 "C:\Users\Adrian\Documents\Test.nxc"
+7	56	21	#line 56 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	21		set __signed_stack_001followline, 0
+7	56	24	#line 56 "C:\Users\Adrian\Documents\Test.nxc"
+7	56	24	#line 56 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	24		set __signed_stack_002followline, 56
+7	56	27	#line 56 "C:\Users\Adrian\Documents\Test.nxc"
+7	56	27	#line 56 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	27		mov __D0followline, __followline_7qG2_left_7qG2_000
+7	57	29	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	29	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	29		mov __TextOutArgs.Location.X, __signed_stack_001followline
+7	57	31	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	31		mov __TextOutArgs.Location.Y, __signed_stack_002followline
+7	57	33	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	33		set __TextOutArgs.Options, 0
+7	57	36	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	36		numtostr __TextOutArgs.Text, __D0followline
+7	57	39	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	39		syscall 13, __TextOutArgs
+7	57	42	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	42		mov __D0followline, __TextOutArgs.Result
+7	57	44	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	44	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	44	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	44		set __signed_stack_001followline, 0
+7	57	47	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	47	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	47		set __signed_stack_002followline, 48
+7	57	50	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	57	50	#line 57 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	50		mov __D0followline, __followline_7qG2_middle_7qG2_000
+7	58	52	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	52	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	52		mov __TextOutArgs.Location.X, __signed_stack_001followline
+7	58	54	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	54		mov __TextOutArgs.Location.Y, __signed_stack_002followline
+7	58	56	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	56		set __TextOutArgs.Options, 0
+7	58	59	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	59		numtostr __TextOutArgs.Text, __D0followline
+7	58	62	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	62		syscall 13, __TextOutArgs
+7	58	65	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	65		mov __D0followline, __TextOutArgs.Result
+7	58	67	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	67	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	67	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	67		set __signed_stack_001followline, 0
+7	58	70	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	70	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	70		set __signed_stack_002followline, 40
+7	58	73	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	58	73	#line 58 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	73		mov __D0followline, __followline_7qG2_right_7qG2_000
+7	59	75	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	75	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	75		mov __TextOutArgs.Location.X, __signed_stack_001followline
+7	59	77	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	77		mov __TextOutArgs.Location.Y, __signed_stack_002followline
+7	59	79	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	79		set __TextOutArgs.Options, 0
+7	59	82	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	82		numtostr __TextOutArgs.Text, __D0followline
+7	59	85	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	85		syscall 13, __TextOutArgs
+7	59	88	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	88		mov __D0followline, __TextOutArgs.Result
+7	59	90	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	90	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	90	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	90		mov __signed_stack_001followline, __followline_7qG2_left_7qG2_000
+7	59	92	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	92	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	92		set __D0followline, 10
+7	59	95	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	95		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	59	99	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	99	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	99		mov __D0followline, __followline_7qG2_right_7qG2_000
+7	59	101	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	101		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	59	105	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	105		brtst 4, __ASM_Label_546, __D0followline
+7	59	108	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	108		mov __signed_stack_001followline, __followline_7qG2_middle_7qG2_000
+7	59	110	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	110	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	110		set __D0followline, 10
+7	59	113	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	113		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	59	117	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	59	117	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	117		mov __D0followline, __followline_7qG2_right_7qG2_000
+7	59	119	#line 59 "C:\Users\Adrian\Documents\Test.nxc"
+7	60	119		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	61	123	#line 61 "C:\Users\Adrian\Documents\Test.nxc"
+7	62	123		brtst 4, __ASM_Label_551, __D0followline
+7	62	126	#line 62 "C:\Users\Adrian\Documents\Test.nxc"
+7	63	126		subcall hardleft, __hardleft_return
+7	62	128	#line 62 "C:\Users\Adrian\Documents\Test.nxc"
+7	63	128	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	63	128	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	128		mov __signed_stack_001followline, __followline_7qG2_right_7qG2_000
+7	63	130	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	63	130	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	130		set __D0followline, 10
+7	63	133	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	133		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	63	137	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	63	137	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	137		mov __D0followline, __followline_7qG2_left_7qG2_000
+7	63	139	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	139		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	63	143	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	143		brtst 4, __ASM_Label_553, __D0followline
+7	63	146	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	146		mov __signed_stack_001followline, __followline_7qG2_middle_7qG2_000
+7	63	148	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	63	148	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	148		set __D0followline, 10
+7	63	151	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	151		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	63	155	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	63	155	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	155		mov __D0followline, __followline_7qG2_left_7qG2_000
+7	63	157	#line 63 "C:\Users\Adrian\Documents\Test.nxc"
+7	64	157		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	65	161	#line 65 "C:\Users\Adrian\Documents\Test.nxc"
+7	66	161		brtst 4, __ASM_Label_558, __D0followline
+7	66	164	#line 66 "C:\Users\Adrian\Documents\Test.nxc"
+7	67	164		subcall hardright, __hardright_return
+7	66	166	#line 66 "C:\Users\Adrian\Documents\Test.nxc"
+7	67	166	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	67	166	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	166		mov __signed_stack_001followline, __followline_7qG2_middle_7qG2_000
+7	67	168	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	67	168	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	168		set __D0followline, 10
+7	67	171	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	171		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	67	175	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	67	175	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	175		mov __D0followline, __followline_7qG2_left_7qG2_000
+7	67	177	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	177		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	67	181	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	181		brtst 4, __ASM_Label_560, __D0followline
+7	67	184	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	184		mov __signed_stack_001followline, __followline_7qG2_middle_7qG2_000
+7	67	186	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	67	186	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	186		set __D0followline, 10
+7	67	189	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	189		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	67	193	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	67	193	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	193		mov __D0followline, __followline_7qG2_right_7qG2_000
+7	67	195	#line 67 "C:\Users\Adrian\Documents\Test.nxc"
+7	68	195		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	69	199	#line 69 "C:\Users\Adrian\Documents\Test.nxc"
+7	70	199		brtst 4, __ASM_Label_565, __D0followline
+7	70	202	#line 70 "C:\Users\Adrian\Documents\Test.nxc"
+7	71	202		subcall forward, __forward_return
+7	70	204	#line 70 "C:\Users\Adrian\Documents\Test.nxc"
+7	73	204	#line 73 "C:\Users\Adrian\Documents\Test.nxc"
+7	74	204		jmp __ASM_Label_566
+7	73	206	#line 73 "C:\Users\Adrian\Documents\Test.nxc"
+7	74	206		mov __signed_stack_001followline, __followline_7qG2_left_7qG2_000
+7	73	208	#line 73 "C:\Users\Adrian\Documents\Test.nxc"
+7	73	208	#line 73 "C:\Users\Adrian\Documents\Test.nxc"
+7	74	208		set __D0followline, 10
+7	73	211	#line 73 "C:\Users\Adrian\Documents\Test.nxc"
+7	74	211		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	73	215	#line 73 "C:\Users\Adrian\Documents\Test.nxc"
+7	74	215	#line 74 "C:\Users\Adrian\Documents\Test.nxc"
+7	75	215		mov __D0followline, __followline_7qG2_middle_7qG2_000
+7	74	217	#line 74 "C:\Users\Adrian\Documents\Test.nxc"
+7	75	217		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	75	221	#line 75 "C:\Users\Adrian\Documents\Test.nxc"
+7	76	221		brtst 4, __ASM_Label_569, __D0followline
+7	76	224	#line 76 "C:\Users\Adrian\Documents\Test.nxc"
+7	77	224		subcall turnleft, __turnleft_return
+7	76	226	#line 76 "C:\Users\Adrian\Documents\Test.nxc"
+7	79	226	#line 79 "C:\Users\Adrian\Documents\Test.nxc"
+7	80	226		jmp __ASM_Label_570
+7	79	228	#line 79 "C:\Users\Adrian\Documents\Test.nxc"
+7	80	228		mov __signed_stack_001followline, __followline_7qG2_right_7qG2_000
+7	79	230	#line 79 "C:\Users\Adrian\Documents\Test.nxc"
+7	79	230	#line 79 "C:\Users\Adrian\Documents\Test.nxc"
+7	80	230		set __D0followline, 10
+7	79	233	#line 79 "C:\Users\Adrian\Documents\Test.nxc"
+7	80	233		add __signed_stack_001followline, __signed_stack_001followline, __D0followline
+7	79	237	#line 79 "C:\Users\Adrian\Documents\Test.nxc"
+7	80	237	#line 80 "C:\Users\Adrian\Documents\Test.nxc"
+7	81	237		mov __D0followline, __followline_7qG2_middle_7qG2_000
+7	80	239	#line 80 "C:\Users\Adrian\Documents\Test.nxc"
+7	81	239		cmp 0, __D0followline, __signed_stack_001followline, __D0followline
+7	81	243	#line 81 "C:\Users\Adrian\Documents\Test.nxc"
+7	82	243		brtst 4, __ASM_Label_573, __D0followline
+7	82	246	#line 82 "C:\Users\Adrian\Documents\Test.nxc"
+7	83	246		subcall turnright, __turnright_return
+7	82	248	#line 82 "C:\Users\Adrian\Documents\Test.nxc"
+7	84	248	#line 84 "C:\Users\Adrian\Documents\Test.nxc"
+7	85	248	#line 85 "C:\Users\Adrian\Documents\Test.nxc"
+7	87	248	#line 87 "C:\Users\Adrian\Documents\Test.nxc"
+7	87	248	#line 87 "C:\Users\Adrian\Documents\Test.nxc"
+7	88	248		subret __followline_return
+8	111	0	#line 111 "C:\Users\Adrian\Documents\Test.nxc"
+8	112	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Adrian\Documents\Test.nxc
+1	__ResetSensorSubroutine	192	NXTDefs.h
+2	turnleft	205	C:\Users\Adrian\Documents\Test.nxc
+3	hardleft	240	C:\Users\Adrian\Documents\Test.nxc
+4	turnright	275	C:\Users\Adrian\Documents\Test.nxc
+5	hardright	311	C:\Users\Adrian\Documents\Test.nxc
+6	forward	347	C:\Users\Adrian\Documents\Test.nxc
+7	followline	383	C:\Users\Adrian\Documents\Test.nxc
+8	__initialize_global_data	633	C:\Users\Adrian\Documents\Test.nxc
